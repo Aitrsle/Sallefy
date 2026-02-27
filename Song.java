@@ -2,12 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Song {
-    private String id, title, artist, style;
+    private int id;
+    private String title;
+    private String artist;
+    private String style;
     private int durationSeconds;
     private Mood mood;
     private List<Note> notes = new ArrayList<>();
 
-    public Song(String id, String title, String artist, int durationSeconds, Mood mood, String style) {
+    public Song(int id, String title, String artist, int durationSeconds, Mood mood, String style) {
         this.id = id;
         this.title = title;
         this.artist = artist;
@@ -16,11 +19,21 @@ public class Song {
         this.style = style;
     }
 
-    public String getId() { return id; }
-    public String getTitle() { return title; }
-    public int getDurationSeconds() { return durationSeconds; }
-    public List<Note> getNotes() { return notes; }
-    public boolean isPlayable() { return !notes.isEmpty(); }
+    public int getId() {
+         return id; 
+        }
+    public String getTitle() {
+         return title;
+         }
+    public int getDurationSeconds() { 
+        return durationSeconds; 
+    }
+    public List<Note> getNotes() {
+        return notes; 
+    }
+    public boolean isPlayable() { 
+        return !notes.isEmpty(); 
+    }
 
     @Override
     public String toString() {

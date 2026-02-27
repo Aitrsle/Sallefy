@@ -9,7 +9,13 @@ public class Note {
         this.type = type;
     }
 
-    public int getFrequency() { return frequency; }
-    public int getDurationMs() { return durationMs; }
-    public WaveType getType() { return type; }
+    public int getFrequency() { 
+        return frequency; 
+    }
+    public int getDurationMs() { 
+        return durationMs; 
+    }
+    public WaveType getType() { 
+        return type;
+     }
 }
